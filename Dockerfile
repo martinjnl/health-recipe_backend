@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./app /code/app
 
-CMD ["python", "-m", "uvicon", "app.main:app", "--reload"]
+CMD ["python", "-m", "uvicorn", "app.main:app", "--reload"]
